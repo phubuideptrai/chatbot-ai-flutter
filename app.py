@@ -1,5 +1,5 @@
-from crypt import methods
-from flask import Flask, jsonfy, request
+
+from flask import Flask, jsonify, request
 import time
 
 app = Flask(__name__)
@@ -7,9 +7,9 @@ app = Flask(__name__)
 
 #response
 def response(): 
-    querry = dict(request.form)["querry"]
-    result = querry + " " + time.ctime()
-    return jsonfy({"response": result})
+    query = dict(request.form)["query"]
+    result = query + " " + time.ctime()
+    return jsonify({"response": result})
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0",)
