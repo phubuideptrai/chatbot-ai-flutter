@@ -13,7 +13,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final GlobalKey<AnimatedListState> _listKey = GlobalKey();
   List<String> _data = [];
 
-  static const String BOT_URL = 'https://flutter-chatbotapp.herokuapp.com/bot';
+  static const String BOT_URL = 'https://chatbot-ai-flutter.herokuapp.com/bot';
   TextEditingController queryController = TextEditingController();
 
   @override
