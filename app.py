@@ -9,7 +9,7 @@ app = Flask(__name__)
 def response(): 
     querry = dict(request.form)["querry"]
     result = querry + " " + time.ctime()
-    return jsonfy({"respone": result})
+    return jsonfy({"response": result})
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0",)
